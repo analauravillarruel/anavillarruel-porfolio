@@ -770,6 +770,7 @@ footer{
   .cabecera__ul{
     font-size: 0.8rem;
     width: 300px;
+    gap: 15px;
   }
   /* CUERPO */
   main{
