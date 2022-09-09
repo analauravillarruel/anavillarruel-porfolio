@@ -250,12 +250,11 @@ footer{
 	transform: scale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-  opacity: .7;
 }
 .grid__pO div img:hover{
   -webkit-transform: scale(102%);
 	transform: scale(102%);
-  opacity: 1;
+  filter: opacity(0.9);
 } 
 
 /* SERVICIOS */
