@@ -267,7 +267,7 @@ footer{
   padding-top: 3em;
   padding-left: 4em;
   column-gap: 1em;
-  row-gap: 1em;
+  row-gap: 2em;
 }
 .contenedor:nth-of-type(1){
   grid-column: 1 / 1;
