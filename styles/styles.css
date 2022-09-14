@@ -150,14 +150,14 @@ footer{
 
 /* SOBRE MI */
 /* CONTENIDO */
-.grid__sM{
+/* .grid__sM{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 1fr);
   height: 100vh;
   column-gap: 10px;
   background-color: rgba(211, 150, 106, 0.466);
-}
+} */
 .grid__contenido:nth-of-type(1){
   grid-column: 2 / 6;
   grid-row: 2 / 3;
