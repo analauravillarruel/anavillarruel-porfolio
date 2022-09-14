@@ -4,7 +4,103 @@
   font-family: 'Raleway', sans-serif;
 }
 /* INDEX */
-.grilla{
+.header{
+  background-color: black;
+  color: #fff;
+}
+.cabecera{
+  padding: 15px;
+}
+.cabecera img{
+  max-width: 3.5rem;
+  object-fit: cover;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  width: 40rem;
+}
+/* CONTENIDO */
+.main{
+  height: 100vh;
+  background-color: rgba(211, 150, 106, 0.466);
+  display: flex;
+  align-items: center;
+}
+.main img{
+  max-width: 35rem;
+}
+.column1{
+  position: relative ;
+  left: 10rem;
+}
+.column2{
+  position: absolute;
+  left: 43rem;
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(241, 241, 241, 0.445);
+  padding: 20px;
+
+}
+
+
+/* FOOTER */
+.pie{
+  background-image: url("../imagenes/1.c-\ Fondo-Pie-de-pagina.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 45%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 20px;
+  height: 10rem;
+  background-color: rgba(211, 150, 106, 0.466);
+  align-items: flex-start;
+}
+.pie h2{
+  font-size: 1.2rem;
+  font-weight: 120px;
+  color: rgb(63, 63, 63);
+}
+.pie img{
+  max-width: 2.5rem;
+}
+.pie__ul{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
+  justify-content: space-evenly;
+}
+.pie__ul li{
+  text-decoration: none;
+  list-style-type: none; 
+}
+/* SOBRE MI */
+.columnsO1{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 40px;
+}
+.columnsO1 h1{
+  padding-bottom: 20px
+}
+.columnsO1 p{
+  padding-right: 20px;
+}
+.columnsO2 img{
+  border-bottom-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* .grilla{
   display: grid;
   grid-template-areas:
   "header header header"
@@ -28,7 +124,7 @@ main{
 footer{
   grid-area: footer;
 }
-/* CABECERA */
+CABECERA
 .cabecera{
   display: flex;
   flex-flow: row wrap;
@@ -68,7 +164,7 @@ footer{
 .cabecera__ul li a:hover{
   --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-/* MAIN */
+MAIN
 .grid{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -115,7 +211,7 @@ footer{
 .grid__eM h2{
   display: none;
 }
-/* FOOTER */
+FOOTER
 .pie{
   background-image: url("../imagenes/1.c-\ Fondo-Pie-de-pagina.png");
   background-size: cover;
@@ -148,16 +244,16 @@ footer{
   list-style-type: none;
 }
 
-/* SOBRE MI */
-/* CONTENIDO */
-/* .grid__sM{
+SOBRE MI
+CONTENIDO
+.grid__sM{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 1fr);
   height: 100vh;
   column-gap: 10px;
   background-color: rgba(211, 150, 106, 0.466);
-} */
+}
 .grid__contenido:nth-of-type(1){
   grid-column: 2 / 6;
   grid-row: 2 / 3;
@@ -208,7 +304,7 @@ footer{
   border-radius: 5px;
 }
 
-/* PORFOLIO */
+PORFOLIO
 .grid__pO{
   display: grid;
   grid-template-areas:
@@ -257,7 +353,7 @@ footer{
   filter: opacity(0.9);
 }
 
-/* SERVICIOS */
+SERVICIOS
 .grid__sE{
   display: grid;
   grid-template-columns: repeat(18,1fr);
@@ -420,13 +516,13 @@ footer{
   visibility: hidden;
   position: absolute;
   text-align: center;
-  /* padding-top: 0.5em; */
+  padding-top: 0.5em;
   letter-spacing: 0.3em;
   color: rgba(0, 0, 0, 0.76);
 }
 
 
-/* SKILLS */
+SKILLS
 .grid__sK{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -483,7 +579,7 @@ footer{
   left: 45%;
   color: rgba(34, 34, 34, 0.76);
 }
-/* CONTACTO */
+CONTACTO
 .grillaCont{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -540,9 +636,9 @@ footer{
   cursor: pointer;
 }
 
-/* MOBILE */
+MOBILE
 
-/* INDEX */
+INDEX
 @media screen and (max-width: 480px){
   .grilla{
     grid-template-areas:
@@ -553,7 +649,7 @@ footer{
     grid-template-rows: 16% auto 10%;
     height: 100vh;
   }
-  /* CABEZA */
+  CABEZA
   header{
     grid-area: header;
     display: flex;
@@ -590,7 +686,7 @@ footer{
   .cabecera__ul li a:hover{
     --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  /* CUERPO */
+  CUERPO
   main{
     grid-area: main;
   }
@@ -635,7 +731,7 @@ footer{
     justify-content: center;
     line-height: 1.5em;
   }
-  /* PIE */
+  PIE
   footer{
     grid-area: footer;
   }
@@ -663,7 +759,7 @@ footer{
     text-decoration: none;
     list-style-type: none;
   }
-  /* SOBRE MI */
+  SOBRE MI
   .grid__sM{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -708,7 +804,7 @@ footer{
     top: 5px;
     width: 45px;
   }
-  /* PORFOLIO */
+  PORFOLIO
   .grid__pO{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -750,7 +846,7 @@ footer{
     padding-left: 25px;
     letter-spacing: 0.3cm;
   }
-  /* SERVICIOS */
+  SERVICIOS
   .grid__sE{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(6,1fr);
@@ -804,7 +900,7 @@ footer{
     padding-top: 5px;
     letter-spacing: 0.3em;
   }
-  /* SKILLS */
+  SKILLS
   .grid__sK{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr) ;
@@ -852,7 +948,7 @@ footer{
     bottom: 3%;
     left: 0%;
   }
-  /* CONTACTO */
+  CONTACTO
   .grillaCont{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -899,9 +995,9 @@ footer{
   }
 }
 
-/* TABLET */
+TABLET
 @media screen and (min-width: 481px) and (max-width: 760px) {
-  /* INDEX */
+  INDEX
   .grilla{
     grid-template-areas:
     "header "
@@ -911,7 +1007,7 @@ footer{
     grid-template-rows: 16% auto 10%;
     height: 100vh;
   }
-  /* CABEZA */
+  CABEZA
   header{
     grid-area: header;
   }
@@ -941,7 +1037,7 @@ footer{
   .cabecera__ul li a:hover{
     --clippy:polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
-  /* CUERPO */
+  CUERPO
   main{
     grid-area: main;
   }
@@ -986,7 +1082,7 @@ footer{
     justify-content: center;
     line-height: 1.5em;
   }
-  /* PIE */
+  PIE
   footer{
     grid-area: footer;
   }
@@ -1014,7 +1110,7 @@ footer{
     text-decoration: none;
     list-style-type: none;
   }
-  /* SOBRE MI */
+  SOBRE MI
   .grid__sM{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1058,7 +1154,7 @@ footer{
     top: 5px;
     width: 45px;
   }
-  /* PORFOLIO */
+  PORFOLIO
     .grid__pO{
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -1102,7 +1198,7 @@ footer{
     transform: scale(102%);
     opacity: 1;
   }
-  /* SERVICIOS */
+  SERVICIOS
   .grid__sE{
     grid-template-columns: repeat(6,1fr);
     grid-template-rows: repeat(6,1fr);
@@ -1155,7 +1251,7 @@ footer{
     padding-top: 5px;
     letter-spacing: 0.3em;
   }
-  /* SKILLS */
+  SKILLS
   .grid__sK{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr) ;
@@ -1201,7 +1297,7 @@ footer{
     bottom: 3%;
     left: 0%;
   }
-  /* CONTACTO */
+  CONTACTO
   .grillaCont{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -1246,7 +1342,4 @@ footer{
   #boton:hover{
     cursor: pointer;
   }
-}
-
-
-
+} */
