@@ -1,0 +1,54 @@
+.grid__pO {
+    display: grid;
+    grid-template-areas:
+        "imagen1 imagen1 imagen1 imagen1 imagen3 imagen3 imagen3 imagen3 imagen3"
+        "imagen1 imagen1 imagen1 imagen1 imagen3 imagen3 imagen3 imagen3 imagen3"
+        "imagen2 imagen2 imagen2 imagen2 imagen3 imagen3 imagen3 imagen3 imagen3";
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    padding: 5rem;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: rgba(211, 150, 106, 0.466);
+}
+
+.grid__img1 {
+    grid-area: imagen1;
+}
+
+.grid__img2 {
+    grid-area: imagen2;
+}
+
+.grid__img3 {
+    grid-area: imagen3;
+}
+
+.pO__titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    background-color: rgba(211, 150, 106, 0.466);
+    letter-spacing: 0.5cm;
+    color: rgb(63, 63, 63);
+}
+
+.grid__pO {
+    div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        -webkit-transform: scale(100%);
+        transform: scale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        &:hover {
+            -webkit-transform: scale(102%);
+            transform: scale(102%);
+            filter: opacity(0.9);
+        }
+    }
+}
+
