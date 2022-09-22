@@ -1,19 +1,44 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.grilla {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 15% auto 10%;
+  height: 100vh;
+}
+@media screen and (max-width: 480px) {
   .grilla {
-    display: grid;
     grid-template-areas:
-      "header header header"
-      "main main main"
-      "footer footer footer";
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 15% auto 10%;
+      "header "
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 16% auto 10%;
     height: 100vh;
   }
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {
+
+  .grilla {
+    grid-template-areas:
+      "header "
+      "main "
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 16% auto 10%;
+    height: 100vh;
+  }
+
+}
+@import "./partials/colores";
 @import "./partials/header";
 @import "./partials/main";
 @import "./partials/footer";
@@ -22,3 +47,4 @@
 @import "./partials/servicios";
 @import "./partials/skills";
 @import "./partials/contacto";
+
