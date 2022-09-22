@@ -46,7 +46,6 @@ footer {
     .pie {
         padding: 15px;
         height: 4rem;
-        background-color: rgba(211, 150, 106, 0.466);
         align-items: flex-start;
 
         h2 {
@@ -62,7 +61,7 @@ footer {
         .pie__ul {
             display: flex;
             flex-flow: row wrap;
-            gap: 1rem;
+            gap: 1.8rem;
             justify-content: space-evenly;
 
             li {
@@ -81,7 +80,6 @@ footer {
     .pie {
         padding: 15px;
         height: 4rem;
-        background-color: rgba(211, 150, 106, 0.466);
         align-items: flex-start;
         h2 {
             font-size: 0.9rem;
@@ -90,7 +88,7 @@ footer {
         }
     
         img {
-            max-width: 2rem;
+            max-width: 1.5rem;
         }
     
         .pie__ul {

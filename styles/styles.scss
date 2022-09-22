@@ -26,7 +26,6 @@
   }
 }
 @media screen and (min-width: 481px) and (max-width: 760px) {
-
   .grilla {
     grid-template-areas:
       "header "
@@ -36,7 +35,6 @@
     grid-template-rows: 16% auto 10%;
     height: 100vh;
   }
-
 }
 @import "./partials/colores";
 @import "./partials/header";
