@@ -29,21 +29,20 @@
     height: 100vh;
   }
 }
-header {
-  grid-area: header;
+.cabecera, header {
   display: flex;
   flex-flow: row-wrap;
   justify-content: space-between;
-  padding: 10px;
   background-color: rgb(24, 24, 24);
 }
 
+header {
+  grid-area: header;
+  padding: 10px;
+}
+
 .cabecera {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
   padding: 20px;
-  background-color: rgb(24, 24, 24);
   align-items: center;
 }
 .cabecera img {

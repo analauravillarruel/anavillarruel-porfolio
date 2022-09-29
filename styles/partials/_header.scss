@@ -1,18 +1,13 @@
 header {
     grid-area: header;
-    display: flex;
-    flex-flow: row-wrap;
-    justify-content: space-between;
+    @extend %cabeceraDefaul;
     padding: 10px;
-    background-color:map-get($color,backgroundCabeza);
+
 }
 
 .cabecera {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    @extend %cabeceraDefaul;
     padding: 20px;
-    background-color:map-get($color,backgroundCabeza);
     align-items: center;
 
     img {
@@ -180,6 +175,7 @@ header {
         }
         .cabecera__ul {
             /* display: none; */
+
             display: flex;
             flex-flow: column;
             justify-content: flex-start;
