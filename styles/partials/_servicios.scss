@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    background-color: rgba(211, 150, 106, 0.466);
+    background-color: map-get($color, backgroundContenido);
     height: 100vh;
     padding-top: 3em;
     padding-left: 4em;
@@ -10,7 +10,7 @@
     row-gap: 2em;
 
     h1 {
-        color: rgb(63, 63, 63);
+        color: map-get($color,color_textTitulo);
         cursor: default;
     }
 

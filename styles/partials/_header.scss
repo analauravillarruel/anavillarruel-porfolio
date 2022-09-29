@@ -4,7 +4,7 @@ header {
     flex-flow: row-wrap;
     justify-content: space-between;
     padding: 10px;
-    background-color: $backgroundHeader;
+    background-color:map-get($color,backgroundCabeza);
 }
 
 .cabecera {
@@ -12,7 +12,7 @@ header {
     flex-flow: row wrap;
     justify-content: space-between;
     padding: 20px;
-    background-color: $backgroundHeader;
+    background-color:map-get($color,backgroundCabeza);
     align-items: center;
 
     img {
@@ -20,19 +20,19 @@ header {
     }
 
     ul {
-        width: 500px;
+        width: 600px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
-        gap: 35px;
+        gap: map-get($espaciado,espaciadoNavMax);
         text-decoration: none;
         list-style-type: none;
     }
 
     li a {
         text-decoration: none;
-        color: $color_headerText;
+        color: map-get($color,color_headerText);
         --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 
         &:after {
@@ -130,14 +130,14 @@ header {
             padding: 0;
             display: grid;
             align-content: center;
-            gap: 2rem;
+            gap: map-get($espaciado, espaciadoMin);
             padding-left: 5%;
             transform: var(--state-menu);
             transition: .3s transform;
             z-index: 1;
 
             li {
-                font-size: 1.2rem;
+                font-size: map-get($tamanos, textNavMin);
             }
         }
     }
@@ -193,13 +193,13 @@ header {
             padding: 0;
             display: grid;
             align-content: center;
-            gap: 3rem;
+            gap: map-get($espaciado,espaciadoMed);
             padding-left: 5%;
             transform: var(--state-menu);
             transition: .3s transform;
             z-index: 1;
             li {
-                font-size: 1.2rem;
+                font-size: map-get($tamanos,textNavMin);
             }
         }
     }

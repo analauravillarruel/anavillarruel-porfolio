@@ -10,7 +10,7 @@
     padding: 5rem;
     column-gap: 10px;
     row-gap: 10px;
-    background-color: rgba(211, 150, 106, 0.466);
+    background-color: map-get($color,backgroundContenido );
 }
 
 .grid__img1 {
@@ -30,9 +30,9 @@
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
-    background-color: rgba(211, 150, 106, 0.466);
+    background-color: map-get($color,backgroundContenido );
     letter-spacing: 0.5cm;
-    color: rgb(63, 63, 63);
+    color: map-get($color,color_textTitulo );
 }
 
 .grid__pO {
@@ -93,7 +93,7 @@
         }
     }
     .pO__titulo {
-        font-size: 12px;
+        font-size: map-get($tamanos,textTituloMin);
         padding-top: 1rem;
         padding-left: 25px;
         letter-spacing: 0.2cm;

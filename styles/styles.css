@@ -50,12 +50,12 @@ header {
   max-width: 3rem;
 }
 .cabecera ul {
-  width: 500px;
+  width: 600px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 35px;
+  gap: 2.3rem;
   text-decoration: none;
   list-style-type: none;
 }
@@ -197,7 +197,7 @@ header {
     padding: 0;
     display: grid;
     align-content: center;
-    gap: 3rem;
+    gap: 3.5rem;
     padding-left: 5%;
     transform: var(--state-menu);
     transition: 0.3s transform;
@@ -252,6 +252,7 @@ main {
   display: flex;
   justify-content: center;
   letter-spacing: 3px;
+  font-size: 1.8rem;
   color: rgb(63, 63, 63);
   padding: 5px;
 }
@@ -299,7 +300,7 @@ main {
   }
   .grid .grid__eM h2 {
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -534,7 +535,7 @@ footer {
     padding-top: 85px;
   }
   .grid__sM .grid__contenido h1 {
-    font-size: 25px;
+    font-size: 1.3rem;
   }
   .grid__sM .grid__contenido img {
     width: 100%;
@@ -682,7 +683,7 @@ footer {
     opacity: 1;
   }
   .pO__titulo {
-    font-size: 12px;
+    font-size: 1rem;
     padding-top: 1rem;
     padding-left: 25px;
     letter-spacing: 0.2cm;

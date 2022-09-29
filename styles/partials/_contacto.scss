@@ -4,7 +4,7 @@
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
     column-gap: 10px;
-    background-color: rgba(211, 150, 106, 0.466);
+    background-color: map-get($color,backgroundContenido);
 
     .contacto h1 {
         color: rgba(34, 34, 34, 0.76);

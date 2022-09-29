@@ -4,7 +4,7 @@
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
     column-gap: 10px;
-    background-color: $backgroundContenido;
+    background-color: map-get($color,backgroundContenido);
 
     .grid__contenido:nth-of-type(1) {
         grid-column: 2 / 6;
@@ -14,7 +14,7 @@
         justify-content: flex-end;
         padding-bottom: 2rem;
         letter-spacing: 0.5cm;
-        color: rgb(63, 63, 63);
+        color:map-get($color,color_textTitulo );
     }
 
     .grid__contenido:nth-of-type(2) {
@@ -92,7 +92,7 @@
         }
         .grid__contenido{
             h1 {
-                font-size: 25px;
+                font-size: map-get($tamanos,textTituloMed);
             }
             img {
                 width: 100%;

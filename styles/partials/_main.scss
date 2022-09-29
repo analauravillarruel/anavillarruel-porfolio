@@ -46,7 +46,8 @@ main {
             display: flex;
             justify-content: center;
             letter-spacing: 3px;
-            color: rgb(63, 63, 63);
+            font-size: map-get($tamanos,textTituloMax);
+            color: map-get($color,color_textTitulo);
             padding: 5px;
         }
 
@@ -65,7 +66,7 @@ main {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, 1fr);
         height: 100vh;
-        background-color: $backgroundContenido;
+        background-color: map-get($color,backgroundContenido);
 
         .grid__eM:nth-of-type(1) {
             grid-column: 1 /6;
@@ -102,7 +103,7 @@ main {
 
             h2 {
                 text-align: center;
-                font-size: 1em;
+                font-size: map-get($tamanos, textTituloMin);
                 display: flex;
                 flex-flow: column;
                 justify-content: center;
@@ -120,7 +121,7 @@ main {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, 1fr);
         height: 100vh;
-        background-color: $backgroundContenido;
+        background-color: map-get($color,backgroundContenido);
         .grid__eM:nth-of-type(1) {
             grid-column: 1 /6;
             grid-row: 2/ 3;

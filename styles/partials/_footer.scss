@@ -12,13 +12,13 @@ footer {
     justify-content: space-between;
     padding: 40px;
     height: 5.5rem;
-    background-color: rgba(211, 150, 106, 0.466);
+    background-color: map-get($color,backgroundContenido);
     align-items: flex-start;
 
     h2 {
         font-size: 1.2rem;
         font-weight: 120px;
-        color: rgb(63, 63, 63);
+        color: map-get($color,color_textTitulo );
     }
 
     img {
@@ -28,7 +28,7 @@ footer {
     .pie__ul {
         display: flex;
         flex-flow: row wrap;
-        gap: 5rem;
+        gap: map-get($espaciado,espaciadoMax);
         justify-content: space-evenly;
     }
 
@@ -51,7 +51,7 @@ footer {
         h2 {
             font-size: 0.6rem;
             font-weight: 120px;
-            color: rgb(63, 63, 63);
+            color: map-get($color,color_textTitulo);
         }
 
         img {
@@ -61,7 +61,7 @@ footer {
         .pie__ul {
             display: flex;
             flex-flow: row wrap;
-            gap: 1.8rem;
+            gap: map-get($espaciado,espaciadoPieMed);
             justify-content: space-evenly;
 
             li {
@@ -84,7 +84,7 @@ footer {
         h2 {
             font-size: 0.9rem;
             font-weight: 120px;
-            color: rgb(63, 63, 63);
+            color: map-get($color,color_textTitulo );
         }
     
         img {
@@ -94,7 +94,7 @@ footer {
         .pie__ul {
             display: flex;
             flex-flow: row wrap;
-            gap: 2rem;
+            gap: map-get($espaciado,espaciadoMin);
             justify-content: space-evenly;
             li {
                 text-decoration: none;
