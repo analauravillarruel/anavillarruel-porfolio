@@ -1,34 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Raleway", sans-serif;
-}
-
-.grilla {
-  display: grid;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 15% auto 10%;
-  height: 100vh;
-}
-
-@media screen and (max-width: 480px) {
-  .grilla {
-    grid-template-areas: "header " "main" "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 16% auto 10%;
-    height: 100vh;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 760px) {
-  .grilla {
-    grid-template-areas: "header " "main " "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 16% auto 10%;
-    height: 100vh;
-  }
-}
 .cabecera, header {
   display: flex;
   flex-flow: row-wrap;
@@ -43,7 +13,7 @@
   border-top-right-radius: 35px;
 }
 
-.contenedor:nth-of-type(5):before, .contenedor:nth-of-type(4):before, .contenedor:nth-of-type(3):before, .contenedor:nth-of-type(2):before {
+.contenedor:nth-of-type(5)::before, .contenedor:nth-of-type(4)::before, .contenedor:nth-of-type(3)::before, .contenedor:nth-of-type(2)::before {
   top: 0;
   bottom: 0;
   left: 0;
@@ -790,7 +760,7 @@ footer {
   overflow: hidden;
   --clippy2: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
-.contenedor:nth-of-type(2):before {
+.contenedor:nth-of-type(2)::before {
   content: "Diseño";
   position: absolute;
   font-size: 1.5rem;
@@ -802,6 +772,7 @@ footer {
 .contenedor:nth-of-type(3) {
   grid-column: 6/10;
   grid-row: 3/3;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -809,7 +780,7 @@ footer {
   overflow: hidden;
   --clippy2: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
-.contenedor:nth-of-type(3):before {
+.contenedor:nth-of-type(3)::before {
   content: "Edición";
   position: absolute;
   font-size: 1.5rem;
@@ -828,7 +799,7 @@ footer {
   cursor: pointer;
   --clippy2: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
-.contenedor:nth-of-type(4):before {
+.contenedor:nth-of-type(4)::before {
   content: "Animación";
   position: absolute;
   font-size: 1.5rem;
@@ -847,7 +818,7 @@ footer {
   cursor: pointer;
   --clippy2: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
-.contenedor:nth-of-type(5):before {
+.contenedor:nth-of-type(5)::before {
   content: "Foto y Video";
   position: absolute;
   font-size: 1.5rem;
@@ -890,23 +861,32 @@ footer {
     grid-row: 2/3;
     height: 100px;
   }
-  .grid__sE .contenedor:nth-of-type(2):before {
-    font-size: 0.8rem;
+  .grid__sE .contenedor:nth-of-type(2)::before {
+    font-size: 1.2rem;
   }
   .grid__sE .contenedor:nth-of-type(3) {
     grid-column: 2/6;
     grid-row: 3/4;
     height: 100px;
   }
+  .grid__sE .contenedor:nth-of-type(3)::before {
+    font-size: 1.2rem;
+  }
   .grid__sE .contenedor:nth-of-type(4) {
     grid-column: 2/6;
     grid-row: 4/5;
     height: 100px;
   }
+  .grid__sE .contenedor:nth-of-type(4)::before {
+    font-size: 1.2rem;
+  }
   .grid__sE .contenedor:nth-of-type(5) {
     grid-column: 2/6;
     grid-row: 5/6;
     height: 100px;
+  }
+  .grid__sE .contenedor:nth-of-type(5)::before {
+    font-size: 1.2rem;
   }
   .grid__sE img {
     width: 100%;
@@ -1283,5 +1263,35 @@ footer {
   }
   .grillaCont .formulario #boton:hover {
     cursor: pointer;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.grilla {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 15% auto 10%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .grilla {
+    grid-template-areas: "header " "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 16% auto 10%;
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 760px) {
+  .grilla {
+    grid-template-areas: "header " "main " "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 16% auto 10%;
+    height: 100vh;
   }
 }/*# sourceMappingURL=styles.css.map */

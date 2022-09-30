@@ -1,0 +1,5 @@
+@mixin espaciado ($flex,$items) {
+    display: $flex;
+    justify-content: center;
+    align-items: $items;
+}
