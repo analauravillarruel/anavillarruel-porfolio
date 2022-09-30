@@ -31,10 +31,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-bottom-right-radius: 75px;
-        border-bottom-left-radius: 75px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        @extend %radioImagen;
     }
 
     h1 {
@@ -45,10 +42,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-bottom-right-radius: 75px;
-        border-bottom-left-radius: 75px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
+        @extend %radioImagen;
     }
 
     .grid__linea {
@@ -98,10 +92,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border-bottom-right-radius: 75px;
-                border-bottom-left-radius: 75px;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
+                
             }
             .grid__linea {
                 position: relative;
@@ -151,10 +142,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-bottom-right-radius: 75px;
-            border-bottom-left-radius: 75px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            
         }
     
         .grid__linea {

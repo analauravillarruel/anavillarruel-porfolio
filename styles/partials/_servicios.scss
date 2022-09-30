@@ -53,19 +53,8 @@
     &:before {
         content: "Diseño";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.479);
-        color: rgb(211, 211, 211);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %cajaTitulo;
         font-size: 1.5rem;
-        letter-spacing: 0.3em;
-        clip-path: var(--clippy2);
-        transition: clip-path .4s ease-in-out;
     }
 
     &:hover {
@@ -86,19 +75,8 @@
     &:before {
         content: "Edición";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.479);
-        color: rgb(211, 211, 211);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %cajaTitulo;
         font-size: 1.5rem;
-        letter-spacing: 0.3em;
-        clip-path: var(--clippy2);
-        transition: clip-path .4s ease-in-out;
     }
 
     &:hover {
@@ -119,19 +97,8 @@
     &:before {
         content: "Animación";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.479);
-        color: rgb(211, 211, 211);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %cajaTitulo;
         font-size: 1.5rem;
-        letter-spacing: 0.3em;
-        clip-path: var(--clippy2);
-        transition: clip-path .4s ease-in-out;
     }
 
     &:hover {
@@ -152,19 +119,8 @@
     &:before {
         content: "Foto y Video";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.479);
-        color: rgb(211, 211, 211);
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %cajaTitulo;
         font-size: 1.5rem;
-        letter-spacing: 0.3em;
-        clip-path: var(--clippy2);
-        transition: clip-path .4s ease-in-out;
     }
 
     &:hover {
@@ -203,6 +159,9 @@
             grid-column: 2 / 6;
             grid-row: 2 / 3;
             height: 100px;
+            &:before {
+                font-size: 0.8rem;
+            }
     
         }
     

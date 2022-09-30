@@ -36,6 +36,31 @@
   background-color: rgb(24, 24, 24);
 }
 
+.grid__sM img, .grid__sM .grid__contenido:nth-of-type(3) {
+  border-bottom-right-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+.contenedor:nth-of-type(5):before, .contenedor:nth-of-type(4):before, .contenedor:nth-of-type(3):before, .contenedor:nth-of-type(2):before {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.479);
+  color: rgb(211, 211, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.3em;
+  -webkit-clip-path: var(--clippy2);
+          clip-path: var(--clippy2);
+  transition: -webkit-clip-path 0.4s ease-in-out;
+  transition: clip-path 0.4s ease-in-out;
+  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
+}
+
 header {
   grid-area: header;
   padding: 10px;
@@ -478,10 +503,6 @@ footer {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-bottom-right-radius: 75px;
-  border-bottom-left-radius: 75px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 .grid__sM h1 {
   padding-bottom: 15px;
@@ -491,10 +512,6 @@ footer {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-bottom-right-radius: 75px;
-  border-bottom-left-radius: 75px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 .grid__sM .grid__linea {
   position: relative;
@@ -541,10 +558,6 @@ footer {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-bottom-right-radius: 75px;
-    border-bottom-left-radius: 75px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
   }
   .grid__sM .grid__contenido .grid__linea {
     position: relative;
@@ -587,10 +600,6 @@ footer {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-bottom-right-radius: 75px;
-    border-bottom-left-radius: 75px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
   }
   .grid__sM .grid__linea {
     position: relative;
@@ -784,22 +793,7 @@ footer {
 .contenedor:nth-of-type(2):before {
   content: "Diseño";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.479);
-  color: rgb(211, 211, 211);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
-  letter-spacing: 0.3em;
-  -webkit-clip-path: var(--clippy2);
-          clip-path: var(--clippy2);
-  transition: -webkit-clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
 }
 .contenedor:nth-of-type(2):hover {
   --clippy2: polygon(100% 0, 0 0, 0 100%, 100% 100%);
@@ -818,22 +812,7 @@ footer {
 .contenedor:nth-of-type(3):before {
   content: "Edición";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.479);
-  color: rgb(211, 211, 211);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
-  letter-spacing: 0.3em;
-  -webkit-clip-path: var(--clippy2);
-          clip-path: var(--clippy2);
-  transition: -webkit-clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
 }
 .contenedor:nth-of-type(3):hover {
   --clippy2: polygon(100% 0, 0 0, 0 100%, 100% 100%);
@@ -852,22 +831,7 @@ footer {
 .contenedor:nth-of-type(4):before {
   content: "Animación";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.479);
-  color: rgb(211, 211, 211);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
-  letter-spacing: 0.3em;
-  -webkit-clip-path: var(--clippy2);
-          clip-path: var(--clippy2);
-  transition: -webkit-clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
 }
 .contenedor:nth-of-type(4):hover {
   --clippy2: polygon(100% 0, 0 0, 0 100%, 100% 100%);
@@ -886,22 +850,7 @@ footer {
 .contenedor:nth-of-type(5):before {
   content: "Foto y Video";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.479);
-  color: rgb(211, 211, 211);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
-  letter-spacing: 0.3em;
-  -webkit-clip-path: var(--clippy2);
-          clip-path: var(--clippy2);
-  transition: -webkit-clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out;
-  transition: clip-path 0.4s ease-in-out, -webkit-clip-path 0.4s ease-in-out;
 }
 .contenedor:nth-of-type(5):hover {
   --clippy2: polygon(100% 0, 0 0, 0 100%, 100% 100%);
@@ -940,6 +889,9 @@ footer {
     grid-column: 2/6;
     grid-row: 2/3;
     height: 100px;
+  }
+  .grid__sE .contenedor:nth-of-type(2):before {
+    font-size: 0.8rem;
   }
   .grid__sE .contenedor:nth-of-type(3) {
     grid-column: 2/6;
