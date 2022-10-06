@@ -24,9 +24,6 @@ footer {
         font-size: 2.3rem;
         color: black;
     }
-    img {
-        max-width: 2.3rem;
-    }
 
     .pie__ul {
         display: flex;
@@ -57,8 +54,9 @@ footer {
             color: map-get($color,color_textTitulo);
         }
 
-        img {
-            max-width: 1rem;
+        .bx{
+            font-size: 1rem;
+            color: black;
         }
 
         .pie__ul {
@@ -90,8 +88,9 @@ footer {
             color: map-get($color,color_textTitulo );
         }
     
-        img {
-            max-width: 1.5rem;
+        .bx{
+            font-size: 1.5rem;
+            color: black;
         }
     
         .pie__ul {
