@@ -70,6 +70,9 @@ header {
         // background-size: cover;
         // min-height: 500px;
         // height: 100vh;
+        .cabecera__logo{
+            z-index: 1;
+        }
         .nav {
             --state-close: scale(0);
             --state-hamburger: scale(1);

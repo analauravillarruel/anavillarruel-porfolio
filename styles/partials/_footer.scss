@@ -10,7 +10,7 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 40px;
+    padding: 30px;
     height: 5.5rem;
     background-color: map-get($color,backgroundContenido);
     align-items: flex-start;
@@ -49,20 +49,20 @@ footer {
         align-items: flex-start;
 
         h2 {
-            font-size: 0.6rem;
+            font-size: 1rem;
             font-weight: 120px;
             color: map-get($color,color_textTitulo);
         }
 
         .bx{
-            font-size: 1rem;
+            font-size: 1.5rem;
             color: black;
         }
 
         .pie__ul {
             display: flex;
             flex-flow: row wrap;
-            gap: map-get($espaciado,espaciadoPieMed);
+            gap: map-get($espaciado, espaciadoMed);
             justify-content: space-evenly;
 
             li {
@@ -83,20 +83,20 @@ footer {
         height: 4rem;
         align-items: flex-start;
         h2 {
-            font-size: 0.9rem;
+            font-size: 1.2rem;
             font-weight: 120px;
             color: map-get($color,color_textTitulo );
         }
     
         .bx{
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: black;
         }
     
         .pie__ul {
             display: flex;
             flex-flow: row wrap;
-            gap: map-get($espaciado,espaciadoMin);
+            gap: map-get($espaciado,espaciadoMed);
             justify-content: space-evenly;
             li {
                 text-decoration: none;

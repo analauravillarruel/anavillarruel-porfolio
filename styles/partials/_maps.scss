@@ -2,7 +2,8 @@ $color: (
     backgroundCabeza:rgb(24, 24, 24),
     color_headerText: rgb(233, 233, 233),
     backgroundContenido:rgba(211, 150, 106, 0.466),
-    color_textTitulo: rgb(63, 63, 63)
+    color_textTitulo: rgb(63, 63, 63),
+    color_textTituloMed: rgb(44, 44, 44)
 );
 $tamanos: (
     textNavMin: 1.2rem,
@@ -14,7 +15,7 @@ $tamanos: (
 $espaciado: (
     espaciadoMin: 2rem,
     espaciadoMed: 3.5rem,
-    espaciadoPieMed: 1.8rem,
+    espaciadoPieMed: 3rem,
     espaciadoMax: 5rem,
     espaciadoNavMax: 2.3rem
 );
