@@ -11,7 +11,11 @@ header {
     align-items: center;
 
     img {
-        max-width: 3rem;
+        max-width: 4rem;
+<<<<<<< HEAD
+        padding-left: 10px;
+=======
+>>>>>>> sass2
     }
 
     ul {
@@ -110,7 +114,7 @@ header {
         }
 
         img {
-            max-width: 3rem;
+            max-width: 4rem;
         }
 
         .cabecera__ul {
@@ -157,7 +161,7 @@ header {
             width: 40px;
         }
         .cabecera img {
-            max-width: 3rem;
+            max-width: 4rem;
         }
         .cabecera__ul {
             /* display: none; */
